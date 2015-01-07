@@ -4,19 +4,25 @@
     <META http-equiv="refresh" content="30;URL=/">
     <script type="text/javascript" src="http://cdn.clappr.io/latest/clappr.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/clappr.playback-name/0.0.1/playbackname.min.js"></script>
+    <script type="text/javascript" src="http://flv.io/rtmp.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script>
       window.onload = function() {
         var options = {width: 345, height: 195, autoPlay: true, mute: true, hideMediaControl: false,
-          plugins: {'container': [PlaybackName]}};
+          plugins: {'container': [PlaybackName], 'playback': [RTMP]}};
         var source_1 = "http://video.webmfiles.org/big-buck-bunny_trailer.webm";
         var source_2 = "http://bem.tv/superMisto.mp4";
         var source_3 = "http://cdn.bem.tv/stream/soccer5/playlist.m3u8";
         var source_4 = "http://bem.tv/shakira.mp3";
+        var source_5 = 'rtmp://cp67126.edgefcs.net/ondemand/mediapm/strobe/content/test/SpaceAloneHD_sounas_640_500_short';
+        var source_6 = 'rtmp://cdn.bem.tv:1935/live/soccer';
+
         var player_1 = new Clappr.Player(_.extend({source: source_1, parentId: "#player-1"}, options));
         var player_2 = new Clappr.Player(_.extend({source: source_2, parentId: "#player-2"}, options));
         var player_3 = new Clappr.Player(_.extend({source: source_3, parentId: "#player-3"}, options));
         var player_4 = new Clappr.Player(_.extend({source: source_4, parentId: "#player-4"}, options));
+        var player_5 = new Clappr.Player(_.extend({source: source_5, parentId: "#player-5"}, options));
+        var player_6 = new Clappr.Player(_.extend({source: source_6, parentId: "#player-6"}, options));
       }
     </script>
   </head>
@@ -30,6 +36,10 @@
         <td>
           <div id="player-3"></div>
           <div id="player-4"></div>
+        </td>
+        <td>
+          <div id="player-5"></div>
+          <div id="player-6"></div>
         </td>
       </tr>
     </table>
