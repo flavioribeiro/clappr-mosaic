@@ -1,11 +1,21 @@
 <html>
   <head>
     <title>Clappr Mosaic</title>
-    <META http-equiv="refresh" content="30;URL=/clappr-mosaic">
     <script type="text/javascript" src="http://cdn.clappr.io/latest/clappr.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/clappr.playback-name/latest/playbackname.min.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/clappr.rtmp/latest/rtmp.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
+    <style>
+      ul {
+          position: relative;
+          float: left;
+          list-style-type: none;
+          padding-left: 5px;
+      }
+      li {
+        margin-top: 5px;
+      }
+    </style>
     <script>
       window.onload = function() {
         var options = {width: 345, height: 195, autoPlay: true, mute: true, hideMediaControl: false,
@@ -27,21 +37,15 @@
     </script>
   </head>
   <body>
-    <table border=0>
-      <tr>
-        <td>
-          <div id="player-1"></div>
-          <div id="player-2"></div>
-        </td>
-        <td>
-          <div id="player-3"></div>
-          <div id="player-4"></div>
-        </td>
-        <td>
-          <div id="player-5"></div>
-          <div id="player-6"></div>
-        </td>
-      </tr>
-    </table>
+    <ul>
+      <li><div id="player-1"></div></li>
+      <li><div id="player-2"></div></li>
+      <li><div id="player-3"></div></li>
+    </ul>
+    <ul>
+      <li><div id="player-4"></div></li>
+      <li><div id="player-5"></div></li>
+      <li><div id="player-6"></div></li>
+    </ul>
   </body>
 </html>
