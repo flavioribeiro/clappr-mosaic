@@ -11,14 +11,15 @@
           float: left;
           list-style-type: none;
           padding-left: 5px;
+          margin-top: 0px;
       }
       li {
-        margin-top: 5px;
+        margin-bottom: 5px;
       }
     </style>
     <script>
       window.onload = function() {
-        var options = {width: 345, height: 195, autoPlay: true, mute: true, hideMediaControl: false,
+        var options = {width: 345, height: 195, mute: true, autoPlay: true, hideMediaControl: false,
           plugins: {'container': [PlaybackName], 'playback': [RTMP]}};
         var source_1 = "http://video.webmfiles.org/big-buck-bunny_trailer.webm";
         var source_2 = "http://bem.tv/superMisto.mp4";
