@@ -1,12 +1,14 @@
 <html>
   <head>
     <title>Clappr Mosaic</title>
+    <META http-equiv="refresh" content="30;URL=/">
     <script type="text/javascript" src="http://cdn.clappr.io/latest/clappr.js"></script>
     <script type="text/javascript" src="http://cdn.jsdelivr.net/clappr.playback-name/0.0.1/playbackname.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
     <script>
       window.onload = function() {
-        var options = {width: 345, height: 195, autoPlay: true, mute: true, plugins: {'container': [PlaybackName]}};
+        var options = {width: 345, height: 195, autoPlay: true, mute: true, hideMediaControl: false,
+          plugins: {'container': [PlaybackName]}};
         var source_1 = "http://video.webmfiles.org/big-buck-bunny_trailer.webm";
         var source_2 = "http://bem.tv/superMisto.mp4";
         var source_3 = "http://cdn.bem.tv/stream/soccer5/playlist.m3u8";
