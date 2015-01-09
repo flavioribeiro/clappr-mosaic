@@ -22,13 +22,12 @@
       window.onload = function() {
         var options = {width: 345, height: 195, mute: true, autoPlay: true, hideMediaControl: false,
           plugins: {'container': [PlaybackName], 'playback': [RTMP]}};
-        var source_1 = "http://video.webmfiles.org/elephants-dream.webm";
+        var source_1 = 'rtmp://cdn.bem.tv:1935/live/soccer';
         var source_2 = "http://bem.tv/superMisto.mp4";
         var source_3 = "http://cdn.bem.tv/stream/soccer5/playlist.m3u8";
-        var source_4 = "http://bem.tv/shakira.mp3";
-//        var source_5 = 'rtmp://cp67126.edgefcs.net/ondemand/mediapm/strobe/content/test/SpaceAloneHD_sounas_640_500_short';
-        var source_5 = 'rtmp://cp67126.edgefcs.net/ondemand/mp4:mediapm/osmf/content/test/sample1_700kbps.f4v';
-        var source_6 = 'rtmp://cdn.bem.tv:1935/live/soccer';
+        var source_4 = 'rtmp://cp67126.edgefcs.net/ondemand/mp4:mediapm/osmf/content/test/sample1_700kbps.f4v';
+        var source_5 = "http://bem.tv/shakira.mp3";
+        var source_6 = "http://video.webmfiles.org/elephants-dream.webm";
 
         var player_1 = new Clappr.Player(_.extend({source: source_1, parentId: "#player-1"}, options));
         var player_2 = new Clappr.Player(_.extend({source: source_2, parentId: "#player-2"}, options));
